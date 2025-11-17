@@ -79,7 +79,7 @@ ordemAtletas.forEach(function(atleta) {
     console.log(`Atleta: ${atleta.obtemNomeAtleta()}`);
 	console.log(`Idade: ${atleta.obtemIdadeAtleta()}`);
 	console.log(`Altura: ${atleta.obtemAlturaAtleta()}`);
-	console.log(`Notas: ${atleta.obtemNotasAtleta().join(", ")}`);
+	console.log(`Notas: [${atleta.obtemNotasAtleta().join(", ")}]`);
     console.log(`Categoria: ${atleta.obtemCategoria()}`);
     console.log(`IMC: ${atleta.obtemIMC().toFixed(2)}`);
     console.log(`Média Válida: ${atleta.obtemMediaValida().toFixed(4)}`);
