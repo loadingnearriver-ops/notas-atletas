@@ -82,6 +82,6 @@ ordemAtletas.forEach(function(atleta) {
 	console.log(`Notas: [${atleta.obtemNotasAtleta().join(", ")}]`);
     console.log(`Categoria: ${atleta.obtemCategoria()}`);
     console.log(`IMC: ${atleta.obtemIMC().toFixed(2)}`);
-    console.log(`Média Válida: ${atleta.obtemMediaValida().toFixed(4)}`);
+    console.log(`Média Válida: ${atleta.obtemMediaValida().toFixed(3)}`);
     console.log("-----");
 });
