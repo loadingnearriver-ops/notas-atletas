@@ -20,11 +20,9 @@ class Atleta {
   }
 
   calculaMediaValida() {
-    const notasEmOrdem = this.notas.sort((x, y) => x - y);
+    const notasEmOrdem = [...this.notas].sort((x, y) => x - y);
     const notasRegistradas = notasEmOrdem.slice(1, 4);
-    const soma = notasRegistradas.reduce(function(total, atual) {
-      return total + atual;
-    }, 0);
+    const soma = notasRegistradas.reduce((total, nota) => total + nota, 0);
     return soma / notasRegistradas.length; 
   }
 
